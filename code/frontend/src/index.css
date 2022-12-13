@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  
+  .navListconAnimate :nth-child(1) {
+    animation: animateNavList 0.25s linear;
+  }
+
+  .navListconAnimate :nth-child(2) {
+    animation: animateNavList 0.25s linear 0.25s;
+  }
+
+  .navListconAnimate :nth-child(3) {
+    animation: animateNavList 0.25s linear 0.5s;
+  }
+
+  .navListconAnimate :nth-child(4) {
+    animation: animateNavList 0.25s linear 0.75s;
+  }
+
+  @keyframes animateNavList {
+    to {
+      fill: #a3e635;
+      transform: scale(1.01);
+    }
+  }
+
+
+.readCardIconAnimate {
+    border-right: #a3e635 1rem solid;
+  }
+.readCardIconAnimate :nth-child(2) :nth-child(2){
+    animation: animateReadCardIcon 0.25s linear ;
+}
+.readCardIconAnimate :nth-child(2) :nth-child(4){
+    animation: animateReadCardIcon 0.25s linear 0.25s;
+}
+.readCardIconAnimate :nth-child(2) :nth-child(6){
+    animation: animateReadCardIcon 0.25s linear 0.5s;
+}
+@keyframes animateReadCardIcon{
+    to{
+        transform: translateY(-.25rem);
+    }
+}
+
+.IconAnimate_changeColor svg{
+  fill: #C280FF;
+}
+
+}

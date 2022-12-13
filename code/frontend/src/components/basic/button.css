@@ -1,0 +1,39 @@
+.buttonAnimate_iceEffect:hover:after {
+    border-radius: inherit;
+    content: "";
+    position: absolute; 
+    animation: iceEffect 1s ; 
+}
+
+@keyframes iceEffect {
+    0%{
+        clip-path: polygon(0% 0%, 5% 0%, 5% 100%, 0% 100% );
+        background-color: #dab9f9;
+        width: inherit;
+        height: inherit; 
+        transform:scale(1.5);
+        filter: blur(5rem);
+    }
+
+
+  100%{
+    clip-path: polygon(95% 0%, 100% 0%, 100% 100%, 95% 100% );
+        background-color: #dab9f9;
+        width: inherit;
+        height: inherit; 
+
+  }
+}
+
+.buttonAnimate_iceEffect:hover{
+    background-color: #dab9f9;
+    transition: all 1s;
+}
+
+/* clip-path: polygon(15% 10%, 20% 10%, 20% 80%, 30% 80% , 30% 95% , 15% 95% );
+        background-color: #dab9f9;
+        content: "";
+        position: absolute; 
+        width: inherit;
+        height: inherit; 
+        transform: scale(1); */

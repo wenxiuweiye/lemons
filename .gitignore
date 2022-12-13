@@ -1,0 +1,15 @@
+# dependencies
+/code/frontend/node_modules
+
+/code/backend/dist
+/code/backend/node_modules
+
+# production
+/code/frontend/build
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
